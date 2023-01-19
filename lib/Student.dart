@@ -6,9 +6,10 @@ class Student {
   String? apema;
   String? tel;
   String? email;
+  String? photo_name;
 
   Student(
-      this.controlNum, this.name, this.apepa, this.apema, this.tel, this.email);
+      this.controlNum, this.name, this.apepa, this.apema, this.tel, this.email, this.photo_name);
 
   Map<String, dynamic> toMap() {
     var map = <String, dynamic>{
@@ -17,7 +18,8 @@ class Student {
       'apepa': apepa,
       'apema': apema,
       'tel': tel,
-      'email': email
+      'email': email,
+      'photo_name':photo_name
     };
     return map;
   }
@@ -29,5 +31,6 @@ class Student {
     apema = map['apema'];
     tel = map['tel'];
     email = map['email'];
+    photo_name = map['photo_name'];
   }
 }
